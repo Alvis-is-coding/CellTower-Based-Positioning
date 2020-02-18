@@ -15,7 +15,8 @@ public class post_JSON_and_get_response {
         try {
 
 
-            /** 构造POST的JSON数据 */
+
+            //Create JSON data for POST
             JSONObject holder = new JSONObject();
 //            holder.put("homeMobileCountryCode", "310");
 //            holder.put("homeMobileNetworkCode", "410");
@@ -39,36 +40,36 @@ public class post_JSON_and_get_response {
 
             errorCode = 1;
             System.out.println(holder);
-            // 创建url资源
+            // create url
             URL url = new URL("https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyB-luioErFZmQFYlMPZfSWg3DVWWvvxwAI");
-            // 建立http连接
+            // setup http conncetion
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            // 设置允许输出
+            // set to allow output
             conn.setDoOutput(true);
 
             conn.setDoInput(true);
 
-            // 设置不用缓存
+            // set don't use cache
             conn.setUseCaches(false);
-            // 设置传递方式
+            // set request method
             conn.setRequestMethod("POST");
-            // 设置维持长连接
+            // keep connection alive
             conn.setRequestProperty("Connection", "Keep-Alive");
-            // 设置文件字符集:
+            
             conn.setRequestProperty("Charset", "UTF-8");
-            //转换为字节数组
+            // convert into byte[]
             byte[] data = (holder.toString()).getBytes();
-            // 设置文件长度
+            // set content length
             conn.setRequestProperty("Content-Length", String.valueOf(data.length));
 
-            // 设置文件类型:
+            // set content type
             conn.setRequestProperty("Content-Type", "application/json");
 
             errorCode = 2;
-            // 开始连接请求
+            // start request connetion
             conn.connect();
             OutputStream  out = conn.getOutputStream();
-            // 写入请求的字符串
+            // request input data / bytes
             out.write((holder.toString()).getBytes());
             out.flush();
             out.close();
@@ -77,14 +78,14 @@ public class post_JSON_and_get_response {
 
             System.out.println(conn.getResponseCode());
 
-            // 请求返回的状态
+            // request response code
             if (conn.getResponseCode() == 200) {
                 errorCode = 4;
                 System.out.println("connection succeeded ");
             } else {
                 System.out.println("no++");
             }
-            // 请求返回的数据
+            // request response data
             errorCode = 5;
             InputStream in = conn.getInputStream();
             errorCode = 6;
@@ -93,7 +94,7 @@ public class post_JSON_and_get_response {
             try {
                 byte[] data1 = new byte[in.available()];
                 in.read(data1);
-                // 转成JSON
+                // convert into JSON
                 a = new String(data1);
                 System.out.println(a);
 
@@ -113,15 +114,17 @@ public class post_JSON_and_get_response {
                 System.out.println("longitude: "+ longitude);
 
 
-                //输出创建的json到本地
+                
+                // create a JSON file to store
                 File File = new File("response.json");
-                //创建输出流
+                // output stream
+                
                 FileOutputStream outStream = new FileOutputStream(File);
-
-                //写入数据
+                // input data into the file
+                
                 outStream.write(data1);
 
-                //关闭输出流
+                // close stream
                 outStream.close();
 
 
