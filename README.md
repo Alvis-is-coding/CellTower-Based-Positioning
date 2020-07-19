@@ -1,3 +1,2 @@
 # Y2-proj.
-This is a school project.
-Please read README.pdf.
+https://celltower-based-positiongning.blogspot.com/
