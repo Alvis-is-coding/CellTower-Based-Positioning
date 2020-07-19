@@ -1,0 +1,15 @@
+{
+
+  "wifiAccessPoints": [
+    {"macAddress":"94-B8-6D-2A-30-A5"},
+    {"macAddress":"00-C8-8B-E5-F6-BF"},
+    {"macAddress":"00-C8-8B-E5-F6-B0"},
+    {"macAddress":"00-C8-8B-E5-F6-B1"},
+    {"macAddress":"9C-57-AD-65-B6-A0"},
+    {"macAddress":"9C-57-AD-65-B6-A1"},
+    {"macAddress":"AC-7E-8A-C9-09-30"},
+    {"macAddress":"AC-7E-8A-C9-09-31"},
+
+  ],
+  "considerIp":"false"
+}

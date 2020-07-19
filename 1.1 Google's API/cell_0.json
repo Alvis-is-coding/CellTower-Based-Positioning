@@ -1,0 +1,15 @@
+{
+  "cellTowers":
+  [
+    {
+      "mobileCountryCode":234,
+      "mobileNetworkCode":20,
+      "signalStrength":-81,
+      "locationAreaCode":114,
+      "cellId":13985653,
+      "age":0
+    }
+  ],
+  "considerIp":"false",
+  "radioType":"wcdma"
+}

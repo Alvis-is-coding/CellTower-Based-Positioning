@@ -1,0 +1,53 @@
+{
+  "cellTowers":
+  [
+    {
+      "mobileCountryCode":234,
+      "mobileNetworkCode":20,
+      "signalStrength":-81,
+      "locationAreaCode":114,
+      "cellId":13985653,
+      "age":0
+    },
+    {
+      "mobileCountryCode":234,
+      "mobileNetworkCode":20,
+      "signalStrength":-65,
+      "locationAreaCode":114,
+      "cellId":14022088,
+      "age":0
+    },
+    {
+      "mobileCountryCode":234,
+      "mobileNetworkCode":10,
+      "signalStrength":-85,
+      "locationAreaCode":21880,
+      "cellId":57728299,
+      "age":0
+    },
+    {
+      "mobileCountryCode":234,
+      "mobileNetworkCode":30,
+      "signalStrength":-75,
+      "locationAreaCode":11602,
+      "cellId":2701570,
+      "age":0
+    }
+  ],
+  "wifiAccessPoints": [
+    {"macAddress":"94-B8-6D-2A-30-A5"},
+    {"macAddress":"00-C8-8B-E5-F6-BF"},
+    {"macAddress":"00-C8-8B-E5-F6-B0"},
+    {"macAddress":"00-C8-8B-E5-F6-B1"},
+    {"macAddress":"9C-57-AD-65-B6-A0"},
+    {"macAddress":"9C-57-AD-65-B6-A1"},
+    {"macAddress":"AC-7E-8A-C9-09-30"},
+    {"macAddress":"AC-7E-8A-C9-09-31"},
+    {"macAddress":"7c-95-f3-00-72-00"},
+    {"macAddress":"9C-57-AD-65-B6-AF"},
+    {"macAddress":"00-C8-8B-E5-F6-BE"},
+    {"macAddress":"00-35-1A-E2-75-40"}
+
+  ],
+  "considerIp":"false"
+}
